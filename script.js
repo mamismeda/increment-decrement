@@ -13,9 +13,12 @@ const fixIncrement = (el) => {
 };
 
 const fixDecrement = () => {
+    if (count !== 0) {
+        inputArea.innerHTML = --count;
+    }
 
-    count -- ;
-    inputArea.innerHTML = count;
+    // count -- ;
+    // inputArea.innerHTML = count;
 };
 
 incrementButton.addEventListener("click", fixIncrement);
